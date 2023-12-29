@@ -1,7 +1,7 @@
-p = 1000
-r = 0.07
-years = [10, 20, 30]
+principal = 1000  # Original amount invested
+annual_rate = 0.07  # Annual rate of return (7%)
 
-for n in years:
-    a = p * (1 + r) ** n
-    print(f"Amount after {n} years: {a}")
+
+for years in [10, 20, 30]:
+    amount = principal * (1 + annual_rate) ** years
+    print(f"After {years} years, the amount on deposit will be: ${amount:.2f}")
